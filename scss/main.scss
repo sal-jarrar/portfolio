@@ -48,6 +48,23 @@ header {
   color: $secondary-color;
 }
 
+h2 {
+  &.anim {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(44, end) infinite;
+  }
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 93%;
+    }
+  }
+}
+
 main {
   padding: 4rem;
   // height: 100%;
